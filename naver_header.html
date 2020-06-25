@@ -18,6 +18,36 @@
     }
     ul{
       list-style:none;
+      padding-left:0;
+    }
+    li{
+      width:23px;
+      height:1px;
+      background-color:#333333;
+    }
+    .line02{
+      width:18px;
+      margin:7px 0;
+    }
+    .header_top_right{
+      width:40px;
+      height:40px;
+      background-color:#dddddd;
+      border-radius:20px;
+      text-align:center;
+    }
+    .circle{
+      width:20px;
+      height:20px;
+      border-radius:10px;
+      background-color:#000000;
+      display:inline-block;      
+    }
+    p{
+      text-align:center;
+      font-size:50px;
+      font-weight:bolder;
+      color:#03c75a;
     }
   </style>
 </head>
@@ -25,13 +55,17 @@
   <div class="header_top">
     <div class="header_top_left">
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li class="line01"></li>
+        <li class="line02"></li>
+        <li class="line03"></li>
       </ul>
     </div>
-    <div class="header_top_right">로그인</div>
+    <div class="header_top_right">
+      <div class="circle"></div>
+    </div>
   </div>
-  <div class="header_bottom">해더버텀</div>
+  <div class="header_bottom">
+    <p>NAVER</p>
+  </div>
 </body>
 </html>
