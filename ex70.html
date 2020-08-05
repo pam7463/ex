@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li{
+      position:relative;
+      width:100px;
+      height:100px;
+      border:1px solid red;
+      list-style: none;
+    }
+    li>span{position:absolute;left:-30px;color:transparent;transition:1s;}
+    li:hover>span{left:30px;color:red;}
+    div{
+      width:100px;
+      height:100px;
+      margin:30px auto;
+      background-color:red;
+      transition:1s;
+    }
+    div:hover{
+      transform:rotate(45deg) scale(2);
+      background-color:green;
+    }
+    .par{
+      display:block;
+      width:100px;
+      height:100px;
+      margin:0 auto;
+      border:1px solid red;
+    }
+    .chi{
+      display:block;
+      width:100px;
+      height:100px;
+    }
+    .chi:nth-child(1){
+      background-color:green;
+    }
+    .chi:nth-child(2){
+      background-color:blue;
+      display:none;
+    }
+    .par:hover>.chi:nth-child(1){
+      display:none;
+    }
+    .par:hover>.chi:nth-child(2){
+      display:block;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <span>1</span>
+    </li>
+    <li>
+      <span>2</span>
+    </li>
+    <li>
+      <span>3</span>
+    </li>
+  </ul>
+  <div></div>
+  <span class="par">
+    <span class="chi">연합뉴스TV</span>
+    <span class="chi">좋아요 구독</span>
+  </span>
+</body>
+</html>

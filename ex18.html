@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box 모델</title>
+  <style>
+    *{
+      margin:0;
+      border:none;
+      padding:0;
+    }
+
+    .box01{
+      width:100px;
+      height:100px;
+      margin-right:auto;
+      margin-left:auto;
+      background-color:#ff0000;
+      text-align:center;      
+    }
+    .box02{
+      box-sizing:border-box;
+      width:20px;
+      height:20px;
+      border:10px solid black;
+      border-top:10px solid transparent;
+      border-right:10px solid transparent;
+      border-bottom:10px solid transparent;
+
+      /* border-top-color:black;
+      border-top-width:100px;
+      border-top-style:solid;
+      border-top:100px solid red;
+      border-right-color:black;
+      border-right-width:100px;
+      border-right-style:solid;
+      border-right:100px solid transparent;
+      border-bottom-color:black;
+      border-bottom-width:100px;
+      border-bottom-style:solid;
+      border-bottom:100px solid transparent;
+      border-left-color:black;
+      border-left-width:100px;
+      border-left-style:solid;
+      border-left:100px solid transparent; */
+    }
+    .box03{
+      width:300px;
+      height:300px;
+      margin:0 auto;
+      border:1px solid black;
+      border-radius:150px;
+    }
+    .box04{
+      width:300px;
+      height:300px;
+      margin:20px auto;
+      border:1px solid black;
+      padding-top:10px;
+      padding-right:20px;
+      padding-bottom:30px;
+      padding-left:40px;
+    }
+    .box05{
+      width:300px;
+      height:300px;
+      margin:0 auto;
+      border:1px solid blue;
+      border-radius:50%;
+      padding:20px;
+    }
+    .box06{
+      box-sizing:border-box;
+      width:200px;
+      height:200px;
+      margin:100px auto 0;
+      border:100px solid black;
+      border-right-color:transparent;
+      border-bottom-color:transparent;
+      border-left-color:transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="box01">박스</div>
+  <div class="box02"></div>
+  <div class="box03"></div>
+  <div class="box04"></div>
+  <div class="box05">
+    <div class="box06"></div>
+  </div>
+</body>
+</html>

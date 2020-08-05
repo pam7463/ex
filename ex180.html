@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      display:flex;
+      flex-direction:row;
+      border:1px solid black;
+      padding:10px;
+    }
+
+    .box>span{
+      width:100px;
+      height:100px;
+      margin:10px;
+      border:1px solid red;
+      font-size:50px;
+      text-align:center;
+      line-height:100px;
+    }
+
+    .box>span:nth-child(1){background-color:red;order:1;}
+    .box>span:nth-child(2){background-color:green;order:2;}
+    .box>span:nth-child(3){background-color:blue;order:4;}
+    .box>span:nth-child(4){background-color:yellow;order:5;}
+    .box>span:nth-child(5){background-color:cyan;order:3;}
+    
+  </style>
+</head>
+<body>
+  <div class="box">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+  </div>
+</body>
+</html>

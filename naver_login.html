@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네이버</title>
+  <style>
+    *{margin:0;border:none;padding:0;}
+    .clearfix::after{
+      content:'';
+      display:block;
+      clear:both;
+    }
+    a{text-decoration:none;color:#000;}
+    img{vertical-align:top;}
+    ul,ol,li{list-style:none;}
+    input{outline:none;}
+
+    .left{float:left;}
+    .right{float:right;}
+
+    #wrap{
+      width:640px;
+      height:100vh;
+      margin:0 auto;
+      border:1px solid black;
+      padding:5px 10px;
+      background:#f0f0f0;
+    }
+    .header{
+      border-bottom:1px solid black;
+    }
+    .slt_lang{
+      margin-bottom:30px;
+    }
+    .slt_lang>#lang{
+      width:100px;
+      height:30px;
+      border:1px solid #aaa;
+      border-radius:3px;
+      color:#333;
+    }
+    .main_logo{
+      text-align:center;
+      text-transform:uppercase;
+      text-shadow:3px 0 0 #03c75a;
+      letter-spacing:5px;
+      font-family:'roboto';
+      font-weight:bolder;
+      font-size:60px;
+      color:#03c75a;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header class="header">
+      <div class="slt_lang clearfix">
+        <select id="lang" class="right">
+          <option value="ko">한국어</option>
+          <option value="eng">English</option>
+          <option value="ch1">中文(幹體)</option>
+          <option value="ch1">中文(繁滯)</option>
+        </select>
+      </div>
+      <h1 class="main_logo">
+        naver
+      </h1>
+    </header>
+    <section class="section">
+      <form method="post">
+        <label>
+          <input type="text" id="id" placeholder="아이디">
+          <input type="button" value="X">
+        </label>
+        <label>
+          <input type="password" id="password" placeholder="패스워드">
+          <input type="button" value="X">
+        </label>
+        <input type="button" value="로그인" id="button">
+        <label>
+          <input type="checkbox">
+          로그인 유지
+        </label>
+      </form>
+    </section>
+    <footer class="footer"></footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background</title>
+  <style>
+    *{margin:0;border:none;padding:0;}
+    ul,ol,li{list-style:none;}
+    a{text-decoration:none;color:black;}
+
+    ul{text-align:center;}
+    li{display:inline-block;}
+    a{
+      display:block;
+      width:30px;
+      height:30px;
+      text-indent:-99999px;
+      background:url('./images/icons.png') no-repeat;
+      background-size:200%;
+    }
+    li:nth-child(2)>a{
+      background-position-x:-30px;
+    }
+    li:nth-child(3)>a{
+      background-position-y:-30px;
+    }
+    li:nth-child(4)>a{
+      background-position:-30px -30px;
+    }
+    .naver_logo{
+      width:440px;
+      height:100px;
+      background:url('./images/sp_main.44265f.png') no-repeat;
+      background-size:940px 880px;
+      background-position-y:-320px;
+      text-indent: -99999px;
+    }
+    .mode{
+      width:282px;
+      height:90px;
+      background:url('./images/sp_main.44265f.png') no-repeat;
+      background-size:942px 884px;
+      background-position-x:-559px;
+      background-position-y:-4px;
+      text-indent: -999999px;
+    }
+    input:checked+.mode{
+      width:260px;
+      height:90px;
+      background:url('./images/sp_main.44265f.png') no-repeat;
+      background-size:942px 884px;
+      background-position-x:-558px;
+      background-position-y:-120px;
+      text-indent: -999999px;
+    }
+    input{display:none;}
+    /* .light_mode:hover{
+      width:260px;
+      height:90px;
+      background:url('./images/sp_main.44265f.png') no-repeat;
+      background-size:942px 884px;
+      background-position-x:-558px;
+      background-position-y:-120px;
+      text-indent: -999999px;
+    } */
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">facebook</a></li>
+    <li><a href="#">insta</a></li>
+    <li><a href="#">blog</a></li>
+    <li><a href="#">kakao</a></li>
+  </ul>
+  <div class="naver_logo">
+    네이버 로고
+  </div>
+  <label>
+    <input type="checkbox">
+    <div class="mode">
+      모드
+    </div>
+  </label>
+</body>
+</html>

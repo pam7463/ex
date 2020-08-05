@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플랙서블 박스</title>
+  <style>
+    *{margin:0;border:none;padding:0}
+    div{box-sizing:border-box;}
+    .flex_box{
+      width:1200px;
+      height:100px;
+      margin: 0 auto;
+      border:1px solid red;
+      display:flex;
+      flex-flow:row nowrap;
+
+    }
+    .flex_box>div{
+      margin-right:20px;
+      font-size:30px;
+    }
+    .flex_box>div:nth-child(1){
+      border:1px solid green;
+      flex:2;
+      order:3;
+      /* flex:1 1 auto; */
+      /* flex-basis:300px;
+      flex-grow:3;
+      flex-shrink:3 */
+    }
+    .flex_box>div:nth-child(2){
+      border:1px solid blue;
+      flex:4;
+      order:4;
+      /* display:none; */
+      /* flex:1 1 auto; */
+      /* flex-basis:150px;
+      flex-grow:1.5;
+      flex-shrink:1.5; */
+    }
+    .flex_box>div:nth-child(3){
+      border:1px solid yellow;
+      flex:4;
+      order:2;
+      /* display:none; */
+      /* flex:1 1 auto; */
+      /* flex-basis:500px;
+      flex-grow:5;
+      flex-shrink:5; */
+    }
+    .flex_box>div:nth-child(4){
+      border:1px solid cyan;
+      margin-right:0;
+      flex:2;
+      order:1;
+      /* display:none; */
+      /* flex:1 1 auto; */
+      /* flex-basis:500px;
+      flex-grow:5;
+      flex-shrink:5; */
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="flex_box">
+    <div>로고</div>
+    <div>네비게이션</div>
+    <div>SNS</div>
+    <div>햄버거버튼</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼(form)</title>
+  <style>
+    /* input{display:none;} */
+    img{width:16px;}
+    img#img01{display:inline-block;}
+    img#img02{display:none;}
+    input:checked ~ img#img01{display:none;}
+    input:checked ~ img#img02{display:inline-block;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+<form>
+  <label>
+    <input type="checkbox">
+    <img src="./images/chk01.png" alt="img01" id="img01">
+    <img src="./images/chk02.png" alt="img02" id="img02">
+    <span>아이디저장</span>
+  </label>
+  <br>
+    <input type="checkbox">체크박스
+    <br>
+    <input type="radio">라디오
+    <br>
+    <input type="color">색
+    <br>
+    <input type="date">날자
+    <br>
+    <input type="file">파일
+    <br>
+    <input type="time">시간
+    <br>
+    <input type="email">이메일
+    <br>
+    <input type="text">글
+    <br>
+    <input type="password">패스워드
+    <input type="submit" value="전송">
+    <br><br><br><br><br>
+    <select name="" id="">
+      <option value="">1</option>
+      <option value="">2</option>
+      <option value="">3</option>
+      <option value="">4</option>
+    </select>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <!-- <input type="button" value="버튼">
+    <input type="submit" value="전송">
+    <input type="reset" value="취소"> -->
+    <button type="button">버튼</button>
+    <button type="submit">전송</button>
+    <button type="reset">리셋</button>
+</form>
+  </div>
+</body>
+</html>

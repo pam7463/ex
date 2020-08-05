@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상속</title>
+  <style>
+    body{
+      font-size:50px;
+    }
+    h1{
+      font-size:initial;
+    }
+    .wrap div{
+      font-size:initial;
+    }
+    ul{
+      height:600px;
+      border:1px solid black;
+    }
+    ul>li:nth-child(3){
+      border:inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>상속</h1>
+    <ul>
+      내자식들
+      <li>첫째</li>
+      <li>둘째</li>
+      <li>셋째</li>
+    </ul>
+    <div>삼촌</div>
+  </div>
+</body>
+</html>

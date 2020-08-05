@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;border:none;padding:0;
+    }
+    a{text-decoration:none;}
+    img{vertical-align:top;}
+    ul,ol,li{list-style:none;}
+
+    .top{
+      display:block;
+      width:100px;
+      height:100px;
+      border-radius:50px;
+      background:black;
+      position:static;
+      right:50px;
+      bottom:50px;
+      opacity:0.3;
+      transition:0.3s;
+    }
+    .top:hover{
+      opacity:1;
+    }
+    .top::before{
+      content:'';
+      display:block;
+      width:0px;
+      height:0px;
+      border:30px solid transparent;
+      border-left-width:15px;
+      border-right-width:15px;
+      border-bottom-color:white;
+      position:absolute;
+      left:35px;
+      top:0;
+    }
+    .wrap{
+      position: relative;
+    }
+    .sub_tit{
+      border:1px solid green;
+      position: relative;
+      bottom:10px;
+      left:0;
+    }
+    .sticky{
+      background:black;
+      color:white;
+      position:static;
+      left:0;
+      top:0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 id="top">title</h1>
+    <a href="#top" class="top"></a>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi minus corrupti voluptatem illum, eum non deserunt qui. Facere, maiores reiciendis! Illum accusamus, dignissimos et nisi ratione nihil quidem blanditiis temporibus.</p>
+    <ul class="sticky">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+    </ul>
+    <ol>
+      <li>가</li>
+      <li>나</li>
+      <li>다</li>
+      <li>라</li>
+      <li>마</li>
+      <li>바</li>
+      <li>사</li>
+      <li>아</li>
+      <li>자</li>
+      <li>차</li>
+    </ol>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fuga quaerat, culpa doloremque eum quam amet autem alias earum nostrum eveniet consectetur inventore distinctio dolor, hic, blanditiis quis accusantium. Rem!
+      Tenetur repudiandae odit fugit. Eum doloremque cum quas enim, earum minima vel repudiandae repellat illum itaque iste odit officia dicta nemo provident ex totam, expedita veritatis ea commodi labore sint.
+      A, suscipit nihil officia vero quos, animi recusandae quisquam facilis nisi laudantium ipsum temporibus nam, dolorum voluptatum reprehenderit? Eos exercitationem voluptates ullam incidunt iure molestiae maiores similique sapiente. Odit, sequi.
+      Eius rerum, laborum praesentium in quae vero magni cumque omnis non assumenda fugiat exercitationem aspernatur sit est quaerat inventore maiores voluptates illo vel enim. Ipsum necessitatibus aliquid accusantium repudiandae aperiam?
+      Et ex labore sed doloribus corporis voluptatem temporibus quo nisi eligendi sint iusto, totam explicabo quisquam exercitationem. Dolorum quaerat architecto corporis? Error, ea enim odit quod dignissimos nam doloremque voluptatibus?
+    </p>
+    <h2 class="sub_tit">sub-title</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quod repellat itaque architecto officiis, ad nisi? Perferendis, odit quis minima repellat unde distinctio eius voluptatum dolor nemo tenetur veritatis sint!
+      Voluptatibus libero esse, inventore beatae eaque fuga reiciendis soluta quis numquam earum commodi qui dignissimos est eos officia sit consequatur? Itaque, enim doloribus? Culpa, autem! Itaque sapiente nemo voluptatum voluptas!
+      Saepe consequuntur enim odio esse minima quia aliquam, nemo id maiores mollitia. Dignissimos assumenda aliquam ut officiis a, perspiciatis, voluptates facere error animi nisi incidunt optio voluptate nam in beatae!
+      Eligendi dolores animi qui reiciendis ea accusantium unde magni excepturi laboriosam similique doloremque deserunt dolor, eveniet mollitia distinctio corporis fugiat at, officia quod fugit tempora quae vel magnam molestias! Dolorum?
+      Optio porro animi itaque odit exercitationem repudiandae quaerat accusamus quos enim doloremque. Blanditiis nulla voluptatum sit minima harum. Velit, nisi? Maxime, accusamus magni. Rerum voluptates quas qui quo, explicabo praesentium.
+      Quibusdam vero dicta maiores nihil temporibus commodi vitae numquam quis, quod dolore saepe, quos ipsam quas voluptatum nam aut non libero dignissimos voluptate debitis et illum. Rem laudantium tenetur nobis.
+      Ad at minima cum in libero maxime optio, beatae quae distinctio harum suscipit nihil. Quidem similique quo repudiandae reprehenderit. Repudiandae impedit quidem quae velit ab, quaerat porro est fuga molestiae!
+      Vitae cupiditate commodi harum dolor a quod ab fugit repudiandae quasi et illum fugiat veritatis possimus explicabo ad aliquid molestias pariatur error, distinctio quas unde fuga quam? Id, dolorem quod.
+      Labore animi iure saepe, dolore, quisquam modi consectetur praesentium accusantium pariatur consequuntur iusto reiciendis similique nihil, optio voluptatem expedita enim fugiat officia qui a inventore! Eaque dolores distinctio quis quasi.
+      Omnis, distinctio quo voluptates nemo numquam vel dignissimos. Facere eveniet vel impedit dicta ex illum possimus aliquam, placeat perferendis, ab suscipit dolore odio nobis. Perferendis accusamus quisquam possimus rerum ducimus?
+    </p>
+  </div>
+</body>
+</html>

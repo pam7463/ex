@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마진(margin)</title>
+  <style>
+    body{
+      margin:0;
+      background-color:#f0f0f0;
+    }
+    .wrapper{
+      width:600px;
+      margin:0 auto;
+      
+    }
+    .wrapper>div{
+      margin:10px 0;
+      padding:20px;
+      background-color:#ffffff;
+    }
+    .logo,.search,.menu,.footer{
+      background-color:transparent !important;
+    }
+    input{
+      width:500px;
+      height:60px;
+      margin:0 auto;
+      border:2px solid #03c75a;
+    }
+    .menu{
+      text-align:center;
+      padding-bottom:100px !important;
+    }
+    .menu>span{
+      display:inline-block;
+      width:100px;
+      height:100px;
+      margin:10px;
+      border-radius:40px;
+      background-color:#ffffff;
+    }
+    .app{height:50px;}
+    .app>.app_left{float:left}
+    .app>.app_right{float:right}
+    .stock{clear:both;}
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="logo">
+      <p>NAVER</p>
+    </div>
+    <div class="search">
+      <input type="text">      
+    </div>
+    <div class="menu">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <br>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+      <span>8</span>
+    </div>
+    <div class="banner">
+      광고
+    </div>
+    <div class="weader">
+      날씨
+    </div>
+    <div class="app">
+      <p class="app_left">App</p>
+      <p class="app_right">></p>
+    </div>
+    <div class="stock">
+      증권
+    </div>
+    <div class="webtoon">
+      웹툰
+    </div>
+    <div class="best">
+      인기
+    </div>
+    <div class="footer">
+      바닥글
+    </div>
+  </div>
+</body>
+</html>

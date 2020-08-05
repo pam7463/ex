@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;
+      border:none;
+      padding:0;
+    }
+    div{
+      width:1000px;
+      height:500px;
+      margin:10px auto;
+      border:1px solid black;
+    }
+    span{
+      display:inline-block;
+      width:30px;
+      height:30px;
+      border-radius:15px;
+      background-color:red;
+      
+      animation-name:spin;
+      animation-duration:1s;
+    }
+
+    @keyframes spin{
+      0%{
+        margin-top:0;
+      } 
+      7%{
+        margin-top:470px;
+      }     
+      14%{
+        margin-top:235px;
+      }
+      21%{
+        margin-top:470px;
+      }
+      28%{
+        margin-top:300px;
+      }
+      35%{
+        margin-top:470px;
+      }
+      42%{
+        margin-top:350px;
+      }
+      48%{
+        margin-top:470px;
+      }
+      56%{
+        margin-top:400px;
+      }
+      63%{
+        margin-top:470px;
+      }
+      70%{
+        margin-top:450px;
+      }
+      77%{
+        margin-top:470px;
+      }
+      84%{
+        margin-top:460px;
+      }
+      91%{
+        margin-top:470px;
+      }
+      98%{
+        margin-top:465px;
+      }
+      100%{
+        margin-top:470px;
+      }
+    }
+
+    /* div:hover>span{
+      margin-left:970px;
+      margin-top:0px;
+    }
+    div:hover>span{
+      margin-left:970px;
+      margin-top:470px;
+    }
+    div:hover>span{
+      margin-left:0px;
+      margin-top:470px;
+    }
+    div:hover>span{
+      margin-left:0px;
+      margin-top:0px;
+    } */
+  </style>
+</head>
+<body>
+    <div>
+      <span></span>
+    </div>
+</body>
+</html>

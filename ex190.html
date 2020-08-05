@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>플랙서블 박스</title>
+  <style>
+    *{margin:0;border:none;padding:0;}
+    .quick_box{
+      width:480px;
+      margin:0 auto;
+      border:1px solid black;
+      display:flex;
+      flex-direction:row;
+      justify-content:space-around;
+    }
+    .box{
+      width:100px;
+      height:100px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+    .box>p{
+      text-align:center;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="quick_box">
+    <div class="box box01">
+      <img src="./images/sns01.jpg" alt="아이콘1">
+      <p>아이콘1</p>
+    </div>
+    <div class="box box02">
+      <img src="./images/sns01.jpg" alt="아이콘1">
+      <p>아이콘2</p>
+    </div>
+    <div class="box box03">
+      <img src="./images/sns01.jpg" alt="아이콘1">
+      <p>아이콘3</p>
+    </div>
+    <div class="box box04">
+      <img src="./images/sns01.jpg" alt="아이콘1">
+      <p>아이콘4</p>
+    </div>
+  </div>
+</body>
+</html>
