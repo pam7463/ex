@@ -50,6 +50,43 @@
       font-size:60px;
       color:#03c75a;
     }
+    label{
+      display:block;
+      margin:10px 0;
+      border:1px solid #aaa;
+      padding:5px 10px 5px;
+      background:#fff;
+      position:relative;
+    }
+    #id,#password{
+      width:80%;
+      border:1px solid transparent;
+      padding:10px 0 5px;
+      font-size:20px;
+    }
+    #id:focus,#password:focus{
+      border-color:black;
+    }
+
+    .rst_btn{
+      box-sizing:border-box;
+      width:23px;
+      height:23px;
+      border-radius:50%;
+      background:#999;
+      font-weight:bold;
+      color:#fff;
+      cursor:pointer;
+      position:absolute;
+      right: 56px;
+      top: 12px;
+      opacity: 0;
+      transition:0.3s;
+    }
+    #id:focus+.rst_btn,
+    #password:focus+.rst_btn{
+      opacity: 1;
+    }
   </style>
 </head>
 <body>
@@ -71,13 +108,13 @@
       <form method="post">
         <label>
           <input type="text" id="id" placeholder="아이디">
-          <input type="button" value="X">
+          <input class="rst_btn" type="button" value="X">
         </label>
         <label>
           <input type="password" id="password" placeholder="패스워드">
-          <input type="button" value="X">
+          <input class="rst_btn" type="button" value="X">
         </label>
-        <input type="button" value="로그인" id="button">
+        <input type="button" value="로그인" id="login">
         <label>
           <input type="checkbox">
           로그인 유지
