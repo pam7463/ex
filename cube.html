@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cube</title>
+  <style>
+    .cube{
+      width:300px;
+      height:300px;
+      margin:300px auto;
+      border:1px solid black;
+      position:relative;
+      overflow: hidden;
+    }
+    .row{
+      height:100px;
+    } 
+    .col{
+      display:inline-block;
+      box-sizing:border-box;
+      width:100px;
+      height:100px;
+      background-image:url('./images/baby.jpg');
+      text-indent: -99999px;
+      position:absolute;      
+    }
+    .col1-1{
+      background-position:0 0;
+      left:-300px;
+      transition:all 0.3s linear;
+    }
+    .cube:hover .col1-1{
+      left:0;
+      top:0;
+    }
+    .col1-2{
+      background-position:-100px 0;
+      top:-300px;
+      transition:all 0.4s ease;
+    }
+    .cube:hover .col1-2{
+      left:100px;
+      top:0;
+    }
+    .col1-3{
+      background-position:-200px 0;
+      bottom:-200px;
+      transition:all 1s ease;
+    }
+    .cube:hover .col1-3{
+      left:200px;
+      bottom:200px;
+    }
+    .col2-1{
+      background-position:0 -100px;
+      right:-100px;
+      bottom:-200px;
+      transition:all 0.6s ease-in-out;
+    }
+    .cube:hover .col2-1{
+      right:200px;
+      bottom:100px;
+    }
+    .col2-2{
+      background-position:-100px -100px;
+      top:-200px;
+      right:-200px;
+      transition:all 1.2s linear 0.3s;
+    }
+    .cube:hover .col2-2{
+      top:100px;
+      right:100px;
+    }
+    .col2-3{
+      background-position:-200px -100px;
+      top:-500px;
+      left:-200px;
+      transition:all 0.6s ease-in 2s;
+    }
+    .cube:hover .col2-3{
+      top:100px;
+      left:200px;
+    }
+    .col3-1{
+      background-position:0 -200px;
+      bottom:-300px;
+      left:-150px;
+      transition:all 0.9s ease;
+    }
+    .cube:hover .col3-1{
+      bottom:0;
+      left:0;
+    }
+    .col3-2{
+      background-position:-100px -200px;
+      right:-150px;
+      bottom:-150px;
+      transition:all 1s ease-in-out;
+    }
+    .cube:hover .col3-2{
+      right:100px;
+      bottom:0;
+    }
+    .col3-3{
+      background-position:-200px -200px;
+      left:-300px;
+      bottom:-250px;
+      transition:all .5s linear 1s;
+    }
+    .cube:hover .col3-3{
+      left:200px;
+      bottom:0;
+    }
+  </style>
+</head>
+<body>
+  <div class="cube">
+    <div class="row row01">
+      <div class="col col1-1">1,1</div><div class="col col1-2">1,2</div><div class="col col1-3">1,3</div>
+    </div>
+    <div class="row row02">
+      <div class="col col2-1">2,1</div><div class="col col2-2">2,2</div><div class="col col2-3">2,3</div>
+    </div>
+    <div class="row row03">
+      <div class="col col3-1">3,1</div><div class="col col3-2">3,2</div><div class="col col3-3">3,3</div>
+    </div>
+  </div>
+</body>
+</html>
