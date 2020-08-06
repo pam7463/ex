@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation</title>
+  <style>
+    .wrap{
+     width:100px;
+     height:100px;
+     background:red; 
+     animation-name:ani01;
+     animation-duration:4s;
+     animation-delay:5s;
+     animation-timing-function: ease-in-out;
+     display:none;
+    }
+
+    @keyframes ani01{
+      0%{
+        background:red;
+      }
+      50%{
+        background:green;
+      }
+      100%{
+        background:red;
+      }
+    }
+
+    .wrap2{
+      width:300px;
+      height:200px;
+      background:red;
+      animation-name:ani01;
+      animation-duration: 3s;
+      display:none;
+    }
+    .wrap3{
+      width:500px;
+      height:500px;
+      margin:0 auto;
+      border:1px solid black;
+      display:none;
+    }
+    .box3{
+      width:100px;
+      height:100px;
+      background:red;
+      
+    }
+    .wrap3:hover .box3{
+      animation-name:steel;
+      animation-duration:4s;
+      animation-timing-function:linear;
+      /* animation-direction:alternate; */
+      animation-iteration-count:3;
+    }
+
+    @keyframes steel{
+      0%{
+        margin-left:0px;
+        margin-top:0px;
+        background:red;
+      }
+      25%{
+        margin-left:400px;
+        margin-top:0px;
+        background:green;
+      }
+      50%{
+        margin-left:400px;
+        margin-top:400px;
+        background:blue;
+      }
+      75%{
+        margin-left:0px;
+        margin-top:400px;
+        background:cyan;
+      }
+      100%{
+        margin-left:0px;
+        margin-top:0px;
+        background:red;
+      }
+    }
+
+
+    .wrap4{
+      width:1000px;
+      height:100px;
+      margin:0 auto;
+      border:1px solid black;
+      position:relative;
+    }
+    .wrap4>span{
+      display:inline-block;
+      width:100px;
+      height:100px;
+      border-radius:50%;
+      background:red;
+      font-weight:bold;
+      font-size:30px;
+      color:#ffffff;
+      text-align:center;
+      line-height:100px;
+      position: absolute;
+    }
+    .wrap4>span:first-child{
+      left:0;
+      top:0;
+    }
+    .wrap4>span:last-child{
+      left:50%;
+      top:0;      
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap"></div>
+  <div class="wrap2"></div>
+
+  <div class="wrap3">
+    <div class="box3"></div>
+  </div>
+  <div class="wrap4">
+    <span>1</span>
+    <span>2</span>
+  </div>
+</body>
+</html>
