@@ -11,9 +11,18 @@
     }
 
     .header{
-      height:100px;
       background-color:red;
+      position:relative;
     }
+    .header a{
+      position:absolute;
+      left:0;
+      top:-500px;
+    }
+    .header a:focus{
+      position:static;
+    }
+
 
     .section{
       height:700px;
