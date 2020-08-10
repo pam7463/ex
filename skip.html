@@ -36,8 +36,12 @@
   <div class="wrap">
     <header class="header">
       <h1><a href="index.html" onfocus="
-        document.querySelector('.header').setAttribute('class','active');
-        ">MEGABOX</a></h1>
+        document.querySelector('.header').setAttribute('class','header active');
+        "
+        onfocusout="
+        document.querySelector('.header').setAttribute('class','header');
+        "
+        >MEGABOX</a></h1>
     </header>
     <section class="section">
       <h2>megabox</h2>
